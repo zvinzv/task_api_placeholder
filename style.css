@@ -1,0 +1,42 @@
+:root{
+  --bg-main:#292e3f;
+  --fc-main: #eaeaea;
+  --fc-sec: rgb(27, 27, 27);
+  --card-main: #b6c9cd;
+  --card-sec: #8b9da1;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+  color: var(--fc-main);
+  background-color: #292e3f;
+}
+.root{
+  width: 70%;
+  margin: 2rem auto;
+}
+.root > h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.root .data {
+  display: flex;  
+  flex-direction: column;
+  gap: 10px;
+}
+.data div{
+  color: var(--fc-sec);
+  background-color: var(--card-sec);
+  border-radius: .5rem;
+  box-shadow: 3px 4px 15px rgba(50, 50, 50, 0.288);
+  padding: 10px;
+  transition: 200ms all;
+}
+.data div:hover{
+  cursor: pointer;
+  background-color: var(--card-main);
+}
